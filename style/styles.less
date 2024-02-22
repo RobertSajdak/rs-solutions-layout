@@ -44,3 +44,50 @@
     .column(3);
   }
 }
+
+// Kontener
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  clear: both;
+  padding: 0 15px;
+}
+
+// Inne elementy
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// Tytuły sekcji
+.section-title {
+  margin-bottom: 40px;
+  .center-text;
+}
+
+// Nagłówki
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+// Mixin dla przycisków
+.basic-button(@color, @background-color) {
+  color: @color;
+  background-color: @background-color;
+  text-decoration: none;
+  .inline-block;
+  font-size: @basic-font-size;
+  font-weight: 400;
+  line-height: @basic-line-height;
+  text-transform: uppercase;
+}
