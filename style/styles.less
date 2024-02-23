@@ -91,3 +91,53 @@ h3 {
   line-height: @basic-line-height;
   text-transform: uppercase;
 }
+
+/***  Nagłówek ***/
+header {
+  left: 0;
+  right: 0;
+  top: 0;
+  background: @basic-bg-color;
+  border-bottom: 2px solid @basic-border-color;
+  box-shadow: 0 0 1px @basic-border-color;
+  position: fixed;
+  z-index: 1000;
+  .navbar {
+    height: 63px;
+    .nav-logo {
+      .float-left;
+      .center-vertical;
+      z-index: 2;
+    }
+  }
+}
+
+.main-menu-content {
+  .float-right;
+  .center-vertical;
+  ul {
+    .list-style-none;
+    li {
+      .float-left;
+      .block;
+      a {
+        color: @menu-link-color;
+        font-size: 15px;
+        font-family: @font-family-secondary;
+        font-weight: 400;
+        padding: 20px 14px;
+        line-height: 20px;
+        .basic-transition;
+        &:hover {
+          color: @accent-color;
+        }
+        @media @tablet {
+          padding: 20px 22px;
+        }
+      }
+      i {
+        font-size: 14px;
+      }
+    }
+  }
+}
