@@ -112,6 +112,14 @@ header {
   }
 }
 
+// Ukrycie menu głównego
+#main-menu {
+  .invisible;
+  @media @phone {
+    .block;
+  }
+}
+
 .main-menu-content {
   .float-right;
   .center-vertical;
@@ -130,6 +138,7 @@ header {
         .basic-transition;
         &:hover {
           color: @accent-color;
+          font-weight: bold;
         }
         @media @tablet {
           padding: 20px 22px;
@@ -139,5 +148,15 @@ header {
         font-size: 14px;
       }
     }
+  }
+}
+
+// Mobilne menu
+.slicknav_menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  @media @phone {
+    .invisible;
   }
 }
