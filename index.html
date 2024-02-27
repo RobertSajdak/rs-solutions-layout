@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang='pl'>
 <head>
 	<title>RS Solutions | IT Technologies for business</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<!-- Font Awesome -->
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+	<link rel="stylesheet" href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
 	<!-- Fonty Google -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-
-	<!-- Style LESS -->
-	<link rel="stylesheet" href="style/main.less" type="text/less">
+	<!-- bxSlider CSS file  -->
+	<link href='style/jquery.bxslider.css' rel='stylesheet'>
 	
+	<!-- Style LESS -->
+	<link rel='stylesheet' href='style/main.less' type='text/less'>
 	<!-- JS LESS -->
-	<script src="js/less.min.js"></script>
-
+	<script src='js/less.min.js'></script>
 	<!-- jQuery -->
-	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src='http://code.jquery.com/jquery-1.11.2.min.js'></script>
 	<!-- Mobilne menu  -->
-	<script src="js/jquery.slicknav.min.js"></script>
-
+	<script src='js/jquery.slicknav.min.js'></script>
+	<!-- bxSlider Javascript file  -->
+	<script src='js/jquery.bxslider.min.js'></script>
 </head>
 <body>
 	<!-- Kontener główny -->
@@ -438,6 +438,8 @@
 			prependTo: '#attach-mobile-menu',
 			label: '' 
 		});
+		/* Główny slider*/
+		$('#main-slider').bxSlider();
 	});
 	</script>
 </body>
