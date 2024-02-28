@@ -22,6 +22,8 @@
 	<script src='js/jquery.slicknav.min.js'></script>
 	<!-- bxSlider Javascript file  -->
 	<script src='js/jquery.bxslider.min.js'></script>
+	<!-- Ładowanie obrazków-->
+	<script src='js/imagesloaded.pkgd.min.js'></script>
 </head>
 <body>
 	<!-- Kontener główny -->
@@ -438,6 +440,8 @@
 			prependTo: '#attach-mobile-menu',
 			label: '' 
 		});
+	});
+	$('#main-container').imagesLoaded(function(){
 		/* Główny slider*/
 		$('#main-slider').bxSlider({
 			mode: 'fade',
