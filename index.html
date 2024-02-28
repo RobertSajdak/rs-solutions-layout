@@ -68,7 +68,7 @@
 					</div>
 				</li>
 				<li>
-					<div class="main-slide-1">
+					<div class="main-slide-2">
 						<div class="container">
 							<div class="main-slider-content">
 								<h1>Oparty na LESS</h1>
@@ -439,7 +439,12 @@
 			label: '' 
 		});
 		/* Główny slider*/
-		$('#main-slider').bxSlider();
+		$('#main-slider').bxSlider({
+			mode: 'fade',
+			auto: true,
+			controls: true,
+			pager: false
+		});
 	});
 	</script>
 </body>

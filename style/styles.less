@@ -167,3 +167,25 @@ header {
     box-shadow: 0 0 1px @basic-border-color;
   }
 }
+
+// Główny slider
+.bxslider {
+  .main-slide-1 {
+    background-image: url("../images/slide_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    &::after {
+      .dark-overlay;
+    }
+  }
+  .main-slide-2 {
+    background-image: url("../images/slide_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    &::after {
+      .dark-overlay;
+    }
+  }
+}
