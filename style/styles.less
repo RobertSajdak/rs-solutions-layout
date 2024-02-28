@@ -92,6 +92,11 @@ h3 {
   text-transform: uppercase;
 }
 
+// Główny kontener
+#main-container {
+  padding-top: 53px;
+}
+
 /***  Nagłówek ***/
 header {
   left: 0;
@@ -187,5 +192,50 @@ header {
     &::after {
       .dark-overlay;
     }
+  }
+}
+
+// Obrazy w sliderze
+.bx-viewport {
+  img {
+    .invisible;
+    @media @tablet {
+      .block;
+      position: absolute;
+      right: 10%;
+      top: 20%;
+    }
+  }
+}
+
+// Zawartość slajdu
+.main-slider-content {
+  padding: 15% 2%;
+  color: @brightest-text-color;
+  position: relative;
+  z-index: 1;
+  h1 {
+    font-size: 26px;
+    line-height: 33px;
+    font-weight: 400;
+    @media @tablet {
+      font-size: 48px;
+      line-height: 60px;
+    }
+  }
+  p {
+    font-size: 12px;
+    line-height: @basic-line-height;
+    @media @tablet {
+      font-size: 18px;
+    }
+  }
+  a {
+    position: relative;
+    .basic-button(@bright-text-color, none);
+    margin: 8px 0;
+    padding: 12px 30px;
+    border: 1px solid @brightest-text-color;
+    border-radius: 50px;
   }
 }
