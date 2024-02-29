@@ -13,6 +13,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<!-- bxSlider CSS file  -->
 	<link href='style/jquery.bxslider.css' rel='stylesheet'>
+	<!-- OWL carousel -->
+	<link href='owl-carousel/owl.carousel.css' rel='stylesheet'>
+	<link href='owl-carousel/owl.theme.css' rel='stylesheet'>
 	<!-- Style LESS -->
 	<link rel='stylesheet' href='style/main.less' type='text/less'>
 
@@ -26,6 +29,8 @@
 	<script src='js/jquery.bxslider.min.js'></script>
 	<!-- Ładowanie obrazków-->
 	<script src='js/imagesloaded.pkgd.min.js'></script>
+	<!-- OWL carousel -->
+	<script src='owl-carousel/owl.carousel.min.js'></script>
 </head>
 <body>
 	<!-- Kontener główny -->
@@ -450,6 +455,12 @@
 			auto: true,
 			controls: true,
 			pager: false
+		});
+		$('#portfolio-carousel').owlCarousel({
+			autoPlay: 10000,
+			items: 3,
+			itemsDesktopSmall: [1199, 2],
+			itemsTablet: [768, 1],
 		});
 	});
 	</script>
