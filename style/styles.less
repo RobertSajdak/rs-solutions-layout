@@ -230,12 +230,12 @@ header {
     }
   }
   a {
-    position: relative;
     .basic-button(@bright-text-color, none);
+    .border-radius-single(50px);
+    border: 1px solid @brightest-text-color;
     margin: 8px 0;
     padding: 12px 30px;
-    border: 1px solid @brightest-text-color;
-    border-radius: 50px;
+    position: relative;
   }
 }
 
@@ -393,12 +393,35 @@ header {
   a {
     position: relative;
     .basic-button(@bright-text-color, @accent-color);
-    border-radius: 50px;
+    .border-radius-single(50px);
     margin: 8px 0;
     padding: 12px 30px;
     .basic-transition;
     &:hover {
       opacity: 0.7;
+    }
+  }
+}
+
+// Pasek poniżej wideo.
+.section-video-text {
+  .center-text;
+  background-color: @accent-color;
+  padding: 50px 0;
+  h2 {
+    color: @brightest-text-color;
+    margin-bottom: 0;
+    a {
+      .basic-button(@brightest-text-color, @accent-color);
+      .basic-transition;
+      .border-radius-single(50px);
+      border: 2px solid @brightest-text-color;
+      margin: 8px 0 8px 65px;
+      padding: 10px 30px;
+      &:hover {
+        color: @accent-color;
+        background-color: @brightest-text-color;
+      }
     }
   }
 }
