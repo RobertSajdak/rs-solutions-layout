@@ -1,4 +1,4 @@
-// Siatka kolumn
+// Siatka kolumn.
 @columns: 12;
 @column-width: 65;
 @gutter-width: 30;
@@ -45,7 +45,7 @@
   }
 }
 
-// Kontener
+// Kontener.
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -53,7 +53,7 @@
   padding: 0 15px;
 }
 
-// Inne elementy
+// Inne elementy.
 img {
   max-width: 100%;
   vertical-align: middle;
@@ -67,20 +67,20 @@ a {
   box-sizing: border-box;
 }
 
-// Tytuły sekcji
+// Tytuły sekcji.
 .section-title {
   margin-bottom: 40px;
   .center-text;
 }
 
-// Nagłówki
+// Nagłówki.
 h1,
 h2,
 h3 {
   line-height: 1.1;
 }
 
-// Mixin dla przycisków
+// Mixin dla przycisków.
 .basic-button(@color, @background-color) {
   color: @color;
   background-color: @background-color;
@@ -92,12 +92,12 @@ h3 {
   text-transform: uppercase;
 }
 
-// Główny kontener
+// Główny kontener.
 #main-container {
   padding-top: 53px;
 }
 
-/***  Nagłówek ***/
+// Nagłówek.
 header {
   left: 0;
   right: 0;
@@ -117,7 +117,7 @@ header {
   }
 }
 
-// Ukrycie menu głównego
+// Ukrycie menu głównego.
 #main-menu {
   .invisible;
   @media @phone {
@@ -155,7 +155,7 @@ header {
   }
 }
 
-// Mobilne menu
+// Mobilne menu.
 .slicknav_menu {
   position: fixed;
   left: 0;
@@ -172,7 +172,7 @@ header {
   }
 }
 
-// Główny slider
+// Główny slider.
 .bxslider {
   .main-slide-1 {
     background-image: url("../images/slide_1.jpg");
@@ -194,7 +194,7 @@ header {
   }
 }
 
-// Obrazy w sliderze
+// Obrazy w sliderze.
 .bx-viewport {
   img {
     .invisible;
@@ -207,7 +207,7 @@ header {
   }
 }
 
-// Zawartość slajdu
+// Zawartość slajdu.
 .main-slider-content {
   padding: 15% 2%;
   color: @brightest-text-color;
@@ -239,7 +239,7 @@ header {
   }
 }
 
-// Nasze usługi
+// Nasze usługi.
 .our-services {
   padding: 80px 0 60px;
   .overflow-fix;
@@ -273,7 +273,7 @@ header {
   }
 }
 
-// Portfolio
+// Portfolio.
 .portfolio {
   padding: 55px 0;
   .section-border-top;
@@ -357,9 +357,29 @@ header {
   }
 }
 
-// Sekcja poniżej portfolio
+// Sekcja poniżej portfolio.
 .content-offer {
   padding: 55px 0 0;
   .section-border-top;
   .center-text;
+}
+
+// Sekcja wideo.
+.section-video {
+  .invisible;
+  position: relative;
+  .container {
+    padding: 175px 0;
+    z-index: 2;
+  }
+  @media @tablet {
+    .block;
+  }
+}
+
+#movie {
+  .size(100%; 100%);
+  &:after {
+    .dark-overlay;
+  }
 }
