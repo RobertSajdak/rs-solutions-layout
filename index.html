@@ -31,6 +31,8 @@
 	<script src='js/imagesloaded.pkgd.min.js'></script>
 	<!-- OWL carousel -->
 	<script src='owl-carousel/owl.carousel.min.js'></script>
+	<!-- Odlicznie -->
+	<script src='js/jquery.countTo.js'></script>
 </head>
 <body>
 	<!-- Kontener główny -->
@@ -279,26 +281,26 @@
 			<div class="container">
 				<div class="statistics-single-item single-col">
 					<div class="statistics-content">
-						<h3></h3>
+						<h3><span class="timer" data-from="0" data-to="786" data-speed="3000"></span></h3>
 						<p>Zadowolonych klientów</p>
 					</div>
 				</div>
 				<div class="statistics-single-item single-col">
 					<div class="statistics-content">
-						<h3></h3>
+						<h3><span class="timer" data-from="0" data-to="821" data-speed="3000"></span></h3>
 						<p>Zrealizowanych projektów</p>
 					</div>
 				</div>
 				<div class="statistics-single-item single-col">
 					<div class="statistics-content">
-						<h3></h3>
+						<h3><span class="timer" data-from="0" data-to="16" data-speed="3000"></span></h3>
 						<p>Lat działalności</p>
 					</div>
 				</div>
 				<div class="statistics-single-item single-col">
 					<div class="statistics-content">
-						<h3></h3>
-						<p>Innych ważnych rzeczy</p>
+						<h3><span class="timer" data-from="0" data-to="799" data-speed="3000"></span></h3>
+						<p>Opinii klientów, którzy nam zaufali</p>
 					</div>
 				</div>
 			</div>
@@ -447,6 +449,8 @@
 			prependTo: '#attach-mobile-menu',
 			label: '' 
 		});
+		/* Odliczanie*/
+		$('.timer').countTo();
 	});
 	$('#main-container').imagesLoaded(function(){
 		/* Główny slider*/
