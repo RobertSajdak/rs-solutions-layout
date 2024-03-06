@@ -610,3 +610,29 @@ footer {
     }
   }
 }
+// Stopka - kolumna o nas
+.footer-social {
+  .list-style-none;
+  li {
+    .inline-block;
+    margin-right: 9px;
+    margin-bottom: 3px;
+    a {
+      .inline-block;
+      .size(30px; 30px);
+      border: 1px solid @footer-social-borders-color;
+      .border-radius-single(4px);
+      .center-text;
+      text-decoration: none;
+      .basic-transition;
+      &:hover {
+        background-color: @footer-social-borders-color;
+      }
+      i {
+        font-size: 14px;
+        color: @footer-social-icons-color;
+        line-height: 28px;
+      }
+    }
+  }
+}
