@@ -377,8 +377,8 @@
 		<div class="opinions">
 			<div class="container">
 				<div class="section-title">
-					<h2>Dlaczego warto skorzystać z naszych usług</h2>
-					<p>Vestibulum accumsan auctor diam id aliquam. Sed at eros vitae nulla dictum convallis sit amet vel nibh</p>
+					<h2>Opinie Klientów</h2>
+					<p>Zadowoleni klienci nas doceniają i dzielą się swoimi komentarzami - Dziękujemy!</p>
 				</div>
 				<div class="opinions-content">
 					<ul class="bxslider" id="opinions-slider">
@@ -451,15 +451,6 @@
 		});
 		/* Odliczanie*/
 		$('.timer').countTo();
-		/* Slider opinie*/
-		$('#opinions-slider').bxSlider({
-			auto: true,
-			controls: false,
-			mode: 'vertical',
-			pager: false,
-			pause: 1000,
-			speed: 2000,
-		});
 	});
 	$('#main-container').imagesLoaded(function(){
 		/* Główny slider*/
@@ -468,6 +459,15 @@
 			auto: true,
 			controls: true,
 			pager: false
+		});
+		/* Slider opinie klientów*/
+		$('#opinions-slider').bxSlider({
+			auto: true,
+			controls: false,
+			mode: 'vertical',
+			pager: false,
+			pause: 1000,
+			speed: 2000,
 		});
 		$('#portfolio-carousel').owlCarousel({
 			autoPlay: 10000,
