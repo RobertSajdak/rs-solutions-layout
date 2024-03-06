@@ -451,6 +451,15 @@
 		});
 		/* Odliczanie*/
 		$('.timer').countTo();
+		/* Slider opinie*/
+		$('#opinions-slider').bxSlider({
+			auto: true,
+			controls: false,
+			mode: 'vertical',
+			pager: false,
+			pause: 1000,
+			speed: 2000,
+		});
 	});
 	$('#main-container').imagesLoaded(function(){
 		/* Główny slider*/
