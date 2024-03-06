@@ -596,6 +596,9 @@ header {
 footer {
   background-color: @footer-bg-color;
   color: @bright-text-color;
+  ul {
+    .list-style-none;
+  }
 }
 .footer-main {
   padding: 84px 0 65px;
@@ -612,7 +615,6 @@ footer {
 }
 // Stopka - kolumna o nas
 .footer-social {
-  .list-style-none;
   li {
     .inline-block;
     margin-right: 9px;
@@ -639,7 +641,6 @@ footer {
 // Stopka - kolumna nasz blog
 .our-blog {
   ul {
-    .list-style-none;
     li {
       border-top: 1px solid @footer-social-borders-color;
       padding-top: 15px;
@@ -652,9 +653,9 @@ footer {
       font-size: 13px;
       margin: 0;
       a {
-        .basic-transition;
         color: @bright-text-color;
         font-weight: 400;
+        .basic-transition;
         &:hover {
           text-decoration: underline;
         }
@@ -673,7 +674,6 @@ footer {
 // Stopka - kolumna galeria
 .footer-gallery {
   ul {
-    .list-style-none;
     li {
       .inline-block;
       margin-right: 2px;
@@ -687,6 +687,27 @@ footer {
           opacity: 0.7;
         }
       }
+    }
+  }
+}
+
+// Stopka - linki
+.more-links {
+  li {
+    .block;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid @footer-social-borders-color;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  a {
+    color: @bright-text-color;
+    line-height: @basic-line-height;
+    .basic-transition;
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
