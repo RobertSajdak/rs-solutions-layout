@@ -19,7 +19,8 @@
 	<link href='style/animate.css' rel='stylesheet'>
 	<!-- Style LESS -->
 	<link rel='stylesheet' href='style/main.less' type='text/less'>
-
+	
+	<!--SCRIPTS-->
 	<!-- JS LESS -->
 	<script src='js/less.min.js'></script>
 	<!-- jQuery -->
@@ -34,7 +35,10 @@
 	<script src='owl-carousel/owl.carousel.min.js'></script>
 	<!-- Odlicznie -->
 	<script src='js/jquery.countTo.js'></script>
+	<!-- Viewport Checker -->
+	<script src='js/jquery.viewportchecker.js'></script>
 </head>
+
 <body>
 	<!-- Kontener główny -->
 	<div id="main-container">
@@ -138,7 +142,7 @@
 							<div class="portfolio-hover">
 								<div class="portfolio-hover-inner">
 									<h3>Przykładowy projekt</h3>
-									<p>13 stycznia 2015</p>
+									<p>18 maja 2018</p>
 									<a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
 									<a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i></a>
 								</div>
@@ -149,7 +153,7 @@
 							<div class="portfolio-hover">
 								<div class="portfolio-hover-inner">
 									<h3>Przykładowy projekt</h3>
-									<p>13 stycznia 2015</p>
+									<p>16 września 2019</p>
 									<a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
 									<a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i></a>
 								</div>
@@ -160,7 +164,7 @@
 							<div class="portfolio-hover">
 								<div class="portfolio-hover-inner">
 									<h3>Przykładowy projekt</h3>
-									<p>13 stycznia 2015</p>
+									<p>3 sierpnia 2020</p>
 									<a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
 									<a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i></a>
 								</div>
@@ -171,7 +175,29 @@
 							<div class="portfolio-hover">
 								<div class="portfolio-hover-inner">
 									<h3>Przykładowy projekt</h3>
-									<p>13 stycznia 2015</p>
+									<p>22 kwietnia 2021</p>
+									<a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
+									<a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-item">
+							<img src="images/owl_slider/os1.jpg" alt="">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-inner">
+									<h3>Przykładowy projekt</h3>
+									<p>15 grudnia 2022</p>
+									<a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
+									<a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-item">
+							<img src="images/owl_slider/os3.jpg" alt="">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-inner">
+									<h3>Przykładowy projekt</h3>
+									<p>23 maja 2024</p>
 									<a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
 									<a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i></a>
 								</div>
@@ -473,38 +499,47 @@
 	</div>
 	<script>
 	$(document).ready(function(){
-		/* Mobilne menu*/
+		/* Mobilne menu */
 		$('#main-menu').slicknav({
 			prependTo: '#attach-mobile-menu',
 			label: '' 
 		});
-		/* Odliczanie*/
+
+		/* Odliczanie */
 		$('.timer').countTo();
+
+		/* Viewport */
+		$('.our-team').viewportChecker({
+			classToAdd: 'animated zoomIn'
+		});
 	});
+
 	$('#main-container').imagesLoaded(function(){
-		/* Główny slider*/
+		/* Główny slider */
 		$('#main-slider').bxSlider({
 			mode: 'fade',
 			auto: true,
 			controls: true,
 			pager: false
 		});
-		/* Slider opinie klientów*/
-		$('#opinions-slider').bxSlider({
+
+		/* Slider opinie klientów */
+	$('#opinions-slider').bxSlider({
 			auto: true,
 			controls: false,
 			mode: 'vertical',
 			pager: false,
 			pause: 1000,
 			speed: 2000,
-		});
-		$('#portfolio-carousel').owlCarousel({
+	});
+
+	$('#portfolio-carousel').owlCarousel({
 			autoPlay: 10000,
 			items: 3,
 			itemsDesktopSmall: [1199, 2],
 			itemsTablet: [768, 1],
-		});
 	});
+});
 	</script>
 </body>
 </html>
