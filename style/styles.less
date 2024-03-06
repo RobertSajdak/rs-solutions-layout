@@ -669,3 +669,24 @@ footer {
   line-height: @basic-line-height;
   margin: 0 0 10px;
 }
+
+// Stopka - kolumna galeria
+.footer-gallery {
+  ul {
+    .list-style-none;
+    li {
+      .inline-block;
+      margin-right: 2px;
+      margin-bottom: 6px;
+      img {
+        width: 80px;
+      }
+      a {
+        .basic-transition;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
