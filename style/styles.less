@@ -636,3 +636,36 @@ footer {
     }
   }
 }
+// Stopka - kolumna nasz blog
+.our-blog {
+  ul {
+    .list-style-none;
+    li {
+      border-top: 1px solid @footer-social-borders-color;
+      padding-top: 15px;
+      &:first-child {
+        border-top: none;
+        padding-top: 0;
+      }
+    }
+    h4 {
+      font-size: 13px;
+      margin: 0;
+      a {
+        .basic-transition;
+        color: @bright-text-color;
+        font-weight: 400;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+.post-date {
+  .inline-block;
+  color: @footer-post-date-color;
+  font-size: 12px;
+  line-height: @basic-line-height;
+  margin: 0 0 10px;
+}
