@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang='pl'>
+
 <head>
 	<title>RS Solutions | IT Technologies for business</title>
-
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 
 	<!-- Font Awesome -->
-	<link rel="stylesheet" href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<!-- Fonty Google -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-	<!-- bxSlider CSS file  -->
-	<link href='style/jquery.bxslider.css' rel='stylesheet'>
-	<!-- OWL carousel -->
-	<link href='owl-carousel/owl.carousel.css' rel='stylesheet'>
-	<!-- Animate CSS -->
-	<link href='style/animate.css' rel='stylesheet'>
+	<!-- bxSlider CSS file -->
+	<link href="style/jquery.bxslider.css" rel="stylesheet" />
+	<!-- owl slider-->
+	<link href="owl-carousel/owl.carousel.css" rel="stylesheet" />
+	<!-- Animate CSS-->
+	<link href="style/animate.css" rel="stylesheet" />
+
 	<!-- Style LESS -->
-	<link rel='stylesheet' href='style/main.less' type='text/less'>
-	
-	<!--SCRIPTS-->
-	<!-- JS LESS -->
-	<script src='js/less.min.js'></script>
+	<link rel="stylesheet" href="style/main.css" type="text/css">
+
 	<!-- jQuery -->
-	<script src='http://code.jquery.com/jquery-1.11.2.min.js'></script>
-	<!-- Mobilne menu  -->
-	<script src='js/jquery.slicknav.min.js'></script>
-	<!-- bxSlider Javascript file  -->
-	<script src='js/jquery.bxslider.min.js'></script>
-	<!-- Ładowanie obrazków-->
-	<script src='js/imagesloaded.pkgd.min.js'></script>
-	<!-- OWL carousel -->
-	<script src='owl-carousel/owl.carousel.min.js'></script>
-	<!-- Odlicznie -->
-	<script src='js/jquery.countTo.js'></script>
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<!-- mobilne menu -->
+	<script src="js/jquery.slicknav.min.js"></script>
+	<!-- bxSlider Javascript file -->
+	<script src="js/jquery.bxslider.min.js"></script>
+	<!-- Ladowanie obrazkow -->
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<!-- owl slider -->
+	<script src="owl-carousel/owl.carousel.min.js"></script>
+	<!-- Odliczanie -->
+	<script src="js/jquery.countTo.js"></script>
 	<!-- Viewport Checker -->
-	<script src='js/jquery.viewportchecker.js'></script>
+	<script src="js/jquery.viewportchecker.js"></script>
+	<!-- YTPlayer -->
+	<script src="js/jquery.mb.YTPlayer.min.js"></script>
 </head>
 
 <body>
@@ -128,14 +128,14 @@
 		<div class="portfolio">
 			<!-- Tytul -->
 			<div class="section-title">
-				<div class="container">
+				<div class="container" data-animate="bounceIn">
 					<h2>Nasze portfolio</h2>
 					<p>Vestibulum accumsan auctor diam id aliquam. Sed at eros vitae nulla dictum convallis sit amet vel nibh</p>
 				</div>
 			</div>
 			<!-- Slider -->
 			<div class="portfolio-slider">
-				<div class="container">
+				<div class="container" data-animate="fadeIn">
 					<div id="portfolio-carousel" class="owl-carousel">
 						<div class="portfolio-item">
 							<img src="images/owl_slider/os1.jpg" alt="">
@@ -210,10 +210,10 @@
 
 		<!-- Sekcja content -->
 		<div class="content-offer">
-			<div class="container">
+			<div class="container" data-animate="bounceIn">
 				<div class="section-title">
 					<h2>Co jeszcze możemy i co potrafimy zrobić</h2>
-					<p>Vestibulum accumsan auctor diam id aliquam. Sed at eros vitae nulla dictum convallis sit amet vel nibh</p>
+					<p>Rzeczy niemożliwe robimy od ręki. Cuda potrzebują nieco czasu i cierpliwości.</p>
 				</div>
 				<img src="images/desktop.png" alt="">
 			</div>
@@ -221,14 +221,22 @@
 
 		<!-- Sekcja video -->
 		<div class="section-video">
-			<div id="movie"></div>
+			<div id="movie" style="position: absolute"></div>
 			<div class="video-line">
-				<div class="container">
+				<div class="container" data-animate="bounceIn">
 					<h2>Nasz najnowszy projekt</h2>
 					<a href="#" class="button">Zobacz więcej</a>
 				</div>
 			</div>
-			<div class="player"></div>
+			<div class="player"
+				data-property="{videoURL:'V6_85cSOIcE',			
+								containment:'#movie',showControls:false,
+								startAt:0,
+								mute:true,
+								autoPlay:true,
+								loop:true,
+								opacity:1}">
+			</div>
 		</div>
 
 		<!-- Pasek poniżej video -->
@@ -243,7 +251,7 @@
 		<!-- Sekcja nasze zalety -->
 		<div class="advantages">
 			<div class="section-title">
-				<div class="container">
+				<div class="container" data-animate="bounceIn">
 					<h2>Dlaczego warto skorzystać z naszych usług</h2>
 					<p>Vestibulum accumsan auctor diam id aliquam. Sed at eros vitae nulla dictum convallis sit amet vel nibh</p>
 				</div>
@@ -252,7 +260,7 @@
 			<div class="advantages-content">
 				<div class="container">
 					<!-- Zalety - jeden element -->
-					<div class="single-col">
+					<div class="single-col" data-animate="fadeInLeft">
 						<span><i class="fa fa-male"></i></span>
 						<div class="services-content">
 							<h3>Doświadczony zespół</h3>
@@ -260,7 +268,7 @@
 						</div>
 					</div>
 					<!-- Zalety - jeden element -->
-					<div class="single-col">
+					<div class="single-col" data-animate="fadeInUp">
 						<span><i class="fa fa-css3"></i></span>
 						<div class="services-content">
 							<h3>Nowoczesne technologie</h3>
@@ -268,7 +276,7 @@
 						</div>
 					</div>
 					<!-- Zalety - jeden element -->
-					<div class="single-col">
+					<div class="single-col" data-animate="fadeInRight">
 						<span><i class="fa fa-line-chart"></i></span>
 						<div class="services-content">
 							<h3>5 lat na rynku</h3>
@@ -276,7 +284,7 @@
 						</div>
 					</div>
 					<!-- Zalety - jeden element -->
-					<div class="single-col">
+					<div class="single-col" data-animate="fadeInLeft">
 						<span><i class="fa fa-bookmark-o"></i></span>
 						<div class="services-content">
 							<h3>Najlepsze rozwiązania</h3>
@@ -284,7 +292,7 @@
 						</div>
 					</div>
 					<!-- Zalety - jeden element -->
-					<div class="single-col">
+					<div class="single-col" data-animate="fadeInUp">
 						<span><i class="fa fa-external-link"></i></span>
 						<div class="services-content">
 							<h3>Lepsze rozwiązania</h3>
@@ -292,7 +300,7 @@
 						</div>
 					</div>
 					<!-- Zalety - jeden element -->
-					<div class="single-col">
+					<div class="single-col" data-animate="fadeInRight">
 						<span><i class="fa fa-calculator"></i></span>
 						<div class="services-content">
 							<h3>Doświadczony zespół</h3>
@@ -336,7 +344,7 @@
 		<!-- Sekcja paralax -->
 		<div class="photo-banner">
 			<div class="photo-banner-inner">
-				<div class="container">
+				<div class="container" data-animate="bounceIn">
 					<h2>Przykładowy baner parallax</h2>
 					<a href="#" class="button">Zobacz</a>
 				</div>
@@ -345,7 +353,7 @@
 
 		<!-- Sekcja nasz zespół -->
 		<div class="our-team">
-			<div class="container">
+			<div class="container" data-animate="bounceIn">
 				<div class="section-title">
 					<h2>Nasi specjaliści</h2>
 					<p>Zespół IT tworzą wieloletni praktycy, którzy opracowują profesjonalne rozwiązania biznesowe dla naszych klientów.</p>
@@ -357,7 +365,7 @@
 						<div>
 							<h3>Robert Bern-Lee</h3>
 							<span>Programista Frontend</span>
-							<p>Vestibulum accumsan Vestibulum accumsan auctor diam Vestibullum ante ipsum primis ipsum primis in faucib aliquam. Sed at eros vitae null.</p>
+							<p>Programuje z pasją od wielu lat. Jest fachowcem i artystą w technologiach IT.</p>
 							<ul class="memebers-social">
 								<li><a href="" class="facebook"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="" class="twitter"><i class="fa fa-twitter"></i></a></li>
@@ -371,8 +379,8 @@
 						<img src="images/team_2.jpg" alt="">
 						<div>
 							<h3>Eliza Ross</h3>
-							<span>Programista Backend</span>
-							<p>Vestibulum accumsan Vestibulum accumsan auctor diam Vestibullum ante ipsum primis ipsum primis in faucib aliquam. Sed at eros vitae null.</p>
+							<span>Programistka Backend</span>
+							<p>Wieloletnie doświadczenie w zawodzie i znajomość kilku języków programowania jest jej nieocenionym know-how.</p>
 							<ul class="memebers-social">
 								<li><a href="" class="facebook"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="" class="twitter"><i class="fa fa-twitter"></i></a></li>
@@ -387,7 +395,7 @@
 						<div>
 							<h3>Adam Tacker</h3>
 							<span>Tester</span>
-							<p>Vestibulum accumsan Vestibulum accumsan auctor diam Vestibullum ante ipsum primis ipsum primis in faucib aliquam. Sed at eros vitae null.</p>
+							<p>Ma analityczny umysł i doświadczenie testerskie. Jego cierpliwość jest bliska oświeceniu mnicha buddyjskiego.</p>
 							<ul class="memebers-social">
 								<li><a href="" class="facebook"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="" class="twitter"><i class="fa fa-twitter"></i></a></li>
@@ -403,11 +411,11 @@
 		<!-- Slider opinie -->
 		<div class="opinions">
 			<div class="container">
-				<div class="section-title">
+				<div class="section-title" data-animate="bounceIn">
 					<h2>Opinie Klientów</h2>
 					<p>Zadowoleni klienci nas doceniają i dzielą się swoimi komentarzami - Dziękujemy!</p>
 				</div>
-				<div class="opinions-content">
+				<div class="opinions-content" data-animate="fadeIn">
 					<ul class="bxslider" id="opinions-slider">
 						<li>
 							<p>Vestibulum ante ipsum primis in lum ante ipsum primis in faucibus orci orci lum ante luctus et ultrices posuere cubilia Curae; Donec alit urna scelerisque ac.</p>
@@ -516,8 +524,11 @@ $(document).ready(function(){
 				classToRemove: 'hide',
 				offset: 200
 			});
-		});		
-	});
+		});	
+
+	/* YTPlayer */
+	$('.player').YTPlayer();	
+});
 
 $('#main-container').imagesLoaded(function(){
 	/* główny slider */
